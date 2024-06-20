@@ -1,0 +1,37 @@
+.album-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.album-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.photos-mosaic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-thumbnail {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.photo-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.back-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: blue;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
