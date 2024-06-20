@@ -20,7 +20,7 @@ const UserProfile = () => {
         const albumsData = await albumsRes.json();
         setAlbums(albumsData);
       } catch (error) {
-        console.log('Failed to fetch user or albums', error);
+        console.log(error);
       }
       setLoading(false);
     };
@@ -41,7 +41,7 @@ const UserProfile = () => {
         <p>Username: {user.username}</p>
         <p>Email: {user.email}</p>
       <h2>Albums</h2>
-        <ul>
+        <ul className='no-bullets'>
           {albums.map(album => (
             <li key={album.id}>
               <Link to={`/album/${album.id}`}>{album.title}</Link>

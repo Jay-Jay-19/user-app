@@ -63,3 +63,12 @@ button:hover {
   display: block;
   margin-top: 20px;
 }
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-bullets li {
+  margin: 5px 0;
+}
